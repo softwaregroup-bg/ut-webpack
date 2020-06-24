@@ -1,0 +1,50 @@
+{
+  "name": "ut-webpack",
+  "version": "7.0.0",
+  "main": "index.js",
+  "dependencies": {
+    "neutrino": "^9.2.0",
+    "@neutrinojs/react": "9.2.0",
+    "postcss-assets": "^5.0.0",
+    "postcss-clean": "^1.1.0",
+    "postcss-import": "^12.0.1",
+    "postcss-loader": "^3.0.0",
+    "postcss-merge-rules": "^4.0.2",
+    "postcss-preset-env": "^6.5.0"
+  },
+  "devDependencies": {
+    "tap": "^12.5.3",
+    "ut-tools": "^6.28.0"
+  },
+  "peerDependencies": {
+  },
+  "description": "Webpack shared config",
+  "scripts": {
+    "lint": "ut-lint .",
+    "release": "ut-release",
+    "changelog": "ut-changelog",
+    "check": "ut-check",
+    "cover": "ut-cover-parallel",
+    "lint-js": "ut-lint-js .",
+    "postpublish": "ut-postpublish",
+    "postversion": "ut-postversion",
+    "precommit": "ut-precommit",
+    "precover": "ut-precover",
+    "prepublish": "ut-prepublish",
+    "prepush": "ut-prepush",
+    "pretest": "ut-pretest",
+    "preversion": "ut-preversion",
+    "test": "ut-test-parallel",
+    "version": "ut-version",
+    "jenkins": "ut-jenkins",
+    "gitlab": "ut-gitlab"
+  },
+  "publishConfig": {
+    "registry": "https://nexus.softwaregroup.com/repository/npm-internal"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git@github.com:softwaregroup-bg/ut-webpack.git"
+  },
+  "license": "Apache-2.0"
+}
