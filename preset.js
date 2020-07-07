@@ -3,6 +3,7 @@ const path = require('path');
 const react = require('@neutrinojs/react');
 
 module.exports = options => neutrino => {
+    neutrino.options.source = 'browser';
     neutrino.use(
         react({
             style: {
