@@ -1,6 +1,6 @@
 {
   "name": "ut-webpack",
-  "version": "7.0.0",
+  "version": "7.1.0",
   "main": "index.js",
   "dependencies": {
     "neutrino": "^9.2.0",
@@ -17,8 +17,7 @@
     "tap": "^14.10.7",
     "ut-tools": "^6.33.4"
   },
-  "peerDependencies": {
-  },
+  "peerDependencies": {},
   "description": "Webpack shared config",
   "scripts": {
     "lint": "ut-lint .",
