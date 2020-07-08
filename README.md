@@ -22,7 +22,7 @@ Put the following files in the implementation root folder:
   };
   ```
 
-- `webpack.js`
+- `webpack.config.js`
 
   ```js
   module.exports = require('ut-webpack');
