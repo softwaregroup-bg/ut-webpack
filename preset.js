@@ -2,8 +2,17 @@
 const path = require('path');
 const react = require('@neutrinojs/react');
 
-module.exports = options => neutrino => {
-    neutrino.options.source = 'browser';
+module.exports = ({
+    publicPath = '/a/browser/',
+    source = 'browser',
+    output = path.resolve('dist'),
+    proxy = {
+        context: ['!/a/browser/**'],
+        target: 'http://localhost:8004'
+    },
+    cssImport = path.resolve('impl/browser/config')
+} = {}) => neutrino => {
+    neutrino.options.source = source;
     neutrino.use(
         react({
             style: {
@@ -13,7 +22,7 @@ module.exports = options => neutrino => {
                     loader: 'postcss-loader',
                     options: {
                         plugins: [
-                            require('postcss-import')({path: [path.resolve('impl/browser/config')]}),
+                            require('postcss-import')({path: [cssImport]}),
                             require('postcss-preset-env')({preserve: false}),
                             require('postcss-assets')({relative: true}),
                             require('postcss-merge-rules')(),
@@ -22,18 +31,12 @@ module.exports = options => neutrino => {
                     }
                 }]
             },
-            devServer: {
-                publicPath: '/a/browser/',
-                proxy: {
-                    context: () => true,
-                    target: 'http://localhost:8004'
-                }
-            },
-            publicPath: '/a/browser/'
+            publicPath,
+            devServer: {proxy}
         })
     );
     neutrino.config.resolve.alias.set('react-dom', '@hot-loader/react-dom');
-    neutrino.config.output.path(path.resolve('dist'));
+    neutrino.config.output.path(output);
     neutrino.config.module
         .rule('compile')
         .include.clear().end()
@@ -56,5 +59,22 @@ module.exports = options => neutrino => {
                     keep_fnames: true
                 }
             }]);
+        neutrino.config.plugin('compress').use(require.resolve('compression-webpack-plugin'));
+        neutrino.config.optimization.merge({
+            splitChunks: {
+                cacheGroups: {
+                    vendor: {
+                        test: /[\\/]node_modules[\\/](?!(impl|ut)-)/i,
+                        name: 'vendor',
+                        chunks: 'all'
+                    },
+                    ut: {
+                        test: /[\\/]node_modules[\\/](impl|ut)-/i,
+                        name: 'ut',
+                        chunks: 'all'
+                    }
+                }
+            }
+        });
     }
 };

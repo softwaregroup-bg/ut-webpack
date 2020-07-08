@@ -3,8 +3,9 @@
   "version": "7.1.0",
   "main": "index.js",
   "dependencies": {
+    "compression-webpack-plugin": "^4.0.0",
     "neutrino": "^9.2.0",
-    "@neutrinojs/react": "9.2.0",
+    "@neutrinojs/react": "^9.2.0",
     "postcss-assets": "^5.0.0",
     "postcss-clean": "^1.1.0",
     "postcss-import": "^12.0.1",
