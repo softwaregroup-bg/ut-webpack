@@ -33,6 +33,7 @@ Edit `package.json` to include:
 ```json
 {
     "devDependencies": {
+        "@hot-loader/react-dom": "16.13.0",
         "ut-webpack": "^7.2.0",
         "webpack": "^4.43.0",
         "webpack-dev-server": "^3.11.0",
