@@ -1,3 +1,12 @@
+## [7.2.5](https://github.com/softwaregroup-bg/ut-webpack/compare/v7.2.4...v7.2.5) (2020-07-13)
+
+
+### Bug Fixes
+
+* publish ([ada985e](https://github.com/softwaregroup-bg/ut-webpack/commit/ada985e187037489a8527e8e4efaa47386ec7583))
+
+
+
 ## [7.2.4](https://github.com/softwaregroup-bg/ut-webpack/compare/v7.2.3...v7.2.4) (2020-07-12)
 
 
