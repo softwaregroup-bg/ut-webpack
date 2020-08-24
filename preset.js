@@ -6,6 +6,7 @@ module.exports = ({
     publicPath = '/a/browser/',
     source = 'browser',
     output = path.resolve('dist'),
+    devModulesPath = 'dev',
     proxy = {
         context: ['!/a/browser/**'],
         target: 'http://localhost:8004'
@@ -47,6 +48,11 @@ module.exports = ({
         .set('dtrace-provider', require.resolve('./empty'))
         .set('safe-json-stringify', require.resolve('./empty'))
         .set('source-map-support', require.resolve('./empty'));
+    if (process.env.NODE_ENV === 'development') {
+        neutrino.config.resolve.modules
+            .add('node_modules')
+            .prepend(devModulesPath);
+    }
     if (process.env.NODE_ENV === 'production') {
         neutrino.config.optimization
             .minimizer('terser')

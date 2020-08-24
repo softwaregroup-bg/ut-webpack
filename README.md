@@ -78,3 +78,6 @@ in the first argument :
 - `cssImport` - sets postcss-import
   [path](https://www.npmjs.com/package/postcss-import#path),
   the default is: `path.resolve('impl/browser/config')`
+- `devModulesPath` - sets Neutrino
+  [path](https://neutrinojs.org/webpack-chain/#config-resolve-modules),
+  the default is: `dev`
