@@ -1,3 +1,7 @@
+## [7.2.6](https://github.com/softwaregroup-bg/ut-webpack/compare/v7.2.5...v7.2.6) (2020-08-25)
+
+
+
 ## [7.2.5](https://github.com/softwaregroup-bg/ut-webpack/compare/v7.2.4...v7.2.5) (2020-07-13)
 
 
