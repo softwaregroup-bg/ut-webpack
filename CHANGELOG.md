@@ -1,3 +1,13 @@
+## [7.2.7](https://github.com/softwaregroup-bg/ut-webpack/compare/v7.2.6...v7.2.7) (2021-01-21)
+
+
+### Bug Fixes
+
+* postcss-clean@1.2.0 breaks compatibility ([b80842b](https://github.com/softwaregroup-bg/ut-webpack/commit/b80842bff50fae910a49f582f0ab8dad7865aaa3))
+* update version ([c70e86c](https://github.com/softwaregroup-bg/ut-webpack/commit/c70e86c9375f053096665c4da44712e9fda2d129))
+
+
+
 ## [7.2.6](https://github.com/softwaregroup-bg/ut-webpack/compare/v7.2.5...v7.2.6) (2020-08-25)
 
 
