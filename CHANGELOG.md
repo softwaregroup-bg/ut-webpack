@@ -1,3 +1,12 @@
+## [7.2.8](https://github.com/softwaregroup-bg/ut-webpack/compare/v7.2.7...v7.2.8) (2021-03-08)
+
+
+### Bug Fixes
+
+* do not postcss all *.css files ([e0849d3](https://github.com/softwaregroup-bg/ut-webpack/commit/e0849d377b69ef786e35ba67f89b78b76324e635))
+
+
+
 ## [7.2.7](https://github.com/softwaregroup-bg/ut-webpack/compare/v7.2.6...v7.2.7) (2021-01-21)
 
 
