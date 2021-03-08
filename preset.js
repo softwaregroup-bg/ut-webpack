@@ -18,7 +18,7 @@ module.exports = ({
         react({
             style: {
                 modules: true,
-                modulesTest: /\.css$/,
+                modulesTest: /\.module\.css$|(ut|impl)-.+\.css$/,
                 loaders: [{
                     loader: 'postcss-loader',
                     options: {
