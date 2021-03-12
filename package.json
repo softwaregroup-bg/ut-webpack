@@ -16,7 +16,7 @@
   },
   "devDependencies": {
     "tap": "^14.10.7",
-    "ut-tools": "^6.33.6"
+    "ut-tools": "^6.37.0"
   },
   "peerDependencies": {},
   "description": "Webpack shared config",
