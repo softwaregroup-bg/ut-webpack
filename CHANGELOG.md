@@ -1,3 +1,12 @@
+## [7.2.9](https://github.com/softwaregroup-bg/ut-webpack/compare/v7.2.8...v7.2.9) (2021-03-12)
+
+
+### Bug Fixes
+
+* improve css module regex ([b2a745f](https://github.com/softwaregroup-bg/ut-webpack/commit/b2a745fb842c87f76c37af5f6caa2be825e8dba5))
+
+
+
 ## [7.2.8](https://github.com/softwaregroup-bg/ut-webpack/compare/v7.2.7...v7.2.8) (2021-03-08)
 
 
