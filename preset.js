@@ -11,6 +11,7 @@ module.exports = ({
         context: ['!/a/browser/**'],
         target: 'http://localhost:8004'
     },
+    split,
     cssImport = path.resolve('impl/browser/config')
 } = {}) => neutrino => {
     neutrino.options.source = source;
@@ -68,7 +69,8 @@ module.exports = ({
         neutrino.config.plugin('compress').use(require.resolve('compression-webpack-plugin'));
         neutrino.config.optimization.merge({
             splitChunks: {
-                cacheGroups: {
+                maxInitialRequests: 30,
+                cacheGroups: !split ? {
                     vendor: {
                         test: /[\\/]node_modules[\\/](?!(impl|ut)-)/i,
                         name: 'vendor',
@@ -78,6 +80,56 @@ module.exports = ({
                         test: /[\\/]node_modules[\\/](impl|ut)-/i,
                         name: 'ut',
                         chunks: 'all'
+                    }
+                } : {
+                    vendor: {
+                        test: /[\\/]node_modules[\\/](?!(impl|ut)-)/i,
+                        name: 'vendor',
+                        chunks: 'all',
+                        enforce: true,
+                        priority: -5
+                    },
+                    react: {
+                        test: /[\\/]node_modules[\\/](react|react-dom|react-redux|redux|redux-thunk|redux-devtools-extension|react-router|react-router-dom|react-router-redux)[\\/]/i,
+                        name: 'react',
+                        enforce: true,
+                        chunks: 'all'
+                    },
+                    material: {
+                        test: /[\\/]node_modules[\\/]@material-ui[\\/]/i,
+                        name: 'material',
+                        enforce: true,
+                        chunks: 'all'
+                    },
+                    devextreme: {
+                        test: /[\\/]node_modules[\\/](devextreme|devextreme-react)[\\/]/i,
+                        name: 'devextreme',
+                        enforce: true,
+                        chunks: 'all'
+                    },
+                    utFrontReact: {
+                        test: /[\\/]node_modules[\\/]ut-front-react/i,
+                        name: 'ut-front-react',
+                        enforce: true,
+                        chunks: 'all'
+                    },
+                    utPortal: {
+                        test: /[\\/]node_modules[\\/](ut-front-devextreme|ut-portal)/i,
+                        name: 'ut-portal',
+                        chunks: 'all'
+                    },
+                    ...split.reduce((prev, chunk) => ({
+                        ...prev,
+                        [chunk]: {
+                            test: RegExp(`[\\\\/]node_modules[\\\\/]${chunk}`),
+                            name: chunk,
+                            chunks: 'all'
+                        }
+                    }), {}),
+                    ut: {
+                        test: /[\\/]node_modules[\\/]ut-/i,
+                        name: 'ut',
+                        priority: -5
                     }
                 }
             }
