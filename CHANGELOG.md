@@ -1,3 +1,12 @@
+# [7.3.0](https://github.com/softwaregroup-bg/ut-webpack/compare/v7.2.9...v7.3.0) (2021-03-14)
+
+
+### Features
+
+* configurable splitting ([a0eb30b](https://github.com/softwaregroup-bg/ut-webpack/commit/a0eb30bd4551fd1750d2c918acbeef93ed46d669))
+
+
+
 ## [7.2.9](https://github.com/softwaregroup-bg/ut-webpack/compare/v7.2.8...v7.2.9) (2021-03-12)
 
 
