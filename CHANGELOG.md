@@ -1,3 +1,12 @@
+## [7.3.1](https://github.com/softwaregroup-bg/ut-webpack/compare/v7.3.0...v7.3.1) (2021-03-15)
+
+
+### Bug Fixes
+
+* match modules during build ([61c54db](https://github.com/softwaregroup-bg/ut-webpack/commit/61c54db16ea2db9cc46de62e2e179d99e203b717))
+
+
+
 # [7.3.0](https://github.com/softwaregroup-bg/ut-webpack/compare/v7.2.9...v7.3.0) (2021-03-14)
 
 
