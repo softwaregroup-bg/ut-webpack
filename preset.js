@@ -37,6 +37,19 @@ module.exports = ({
             devServer: {proxy}
         })
     );
+    const devextreme = neutrino.config.module
+        .rule('style')
+        .oneOf('devextreme')
+        .test(/devextreme[/\\]dist[/\\]css[/\\]dx\.(?!common).+\.css$/i)
+        .before('modules');
+    devextreme
+        .use('style')
+        .loader('style-loader')
+        .options({injectType: 'lazyStyleTag'});
+    devextreme
+        .use('css')
+        .loader('css-loader');
+
     neutrino.config.resolve.alias.set('react-dom', '@hot-loader/react-dom');
     neutrino.config.output.path(output);
     neutrino.config.module
