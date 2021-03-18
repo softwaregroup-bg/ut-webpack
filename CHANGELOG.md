@@ -1,3 +1,12 @@
+# [7.4.0](https://github.com/softwaregroup-bg/ut-webpack/compare/v7.3.1...v7.4.0) (2021-03-18)
+
+
+### Features
+
+* enable lazy loading of devextreme css ([8dc9bf4](https://github.com/softwaregroup-bg/ut-webpack/commit/8dc9bf4e71c48d5bea199ef7dc891b3290a13699))
+
+
+
 ## [7.3.1](https://github.com/softwaregroup-bg/ut-webpack/compare/v7.3.0...v7.3.1) (2021-03-15)
 
 
