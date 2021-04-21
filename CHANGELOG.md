@@ -1,3 +1,12 @@
+# [7.5.0](https://github.com/softwaregroup-bg/ut-webpack/compare/v7.4.0...v7.5.0) (2021-04-21)
+
+
+### Features
+
+* add bundle analyzer ([b85311a](https://github.com/softwaregroup-bg/ut-webpack/commit/b85311ad401e851202521b3fe6126e779b87ee40))
+
+
+
 # [7.4.0](https://github.com/softwaregroup-bg/ut-webpack/compare/v7.3.1...v7.4.0) (2021-03-18)
 
 
