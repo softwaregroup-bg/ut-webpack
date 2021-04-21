@@ -147,5 +147,13 @@ module.exports = ({
                 }
             }
         });
+        neutrino.config.plugin('analyzer')
+            .use(require('webpack-bundle-analyzer').BundleAnalyzerPlugin, [{
+                reportFilename: '.lint/bundle.html',
+                analyzerMode: 'static',
+                openAnalyzer: false,
+                defaultSizes: 'gzip',
+                logLevel: 'silent'
+            }]);
     }
 };
