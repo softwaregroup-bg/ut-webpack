@@ -149,11 +149,11 @@ module.exports = ({
         });
         neutrino.config.plugin('analyzer')
             .use(require('webpack-bundle-analyzer').BundleAnalyzerPlugin, [{
-                reportFilename: '.lint/bundle.html',
+                reportFilename: path.resolve('.lint/bundle/index.html'),
                 analyzerMode: 'static',
                 openAnalyzer: false,
                 defaultSizes: 'gzip',
-                logLevel: 'silent'
+                logLevel: 'warn'
             }]);
     }
 };
