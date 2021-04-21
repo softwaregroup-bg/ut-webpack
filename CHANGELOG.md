@@ -1,3 +1,12 @@
+## [7.5.1](https://github.com/softwaregroup-bg/ut-webpack/compare/v7.5.0...v7.5.1) (2021-04-21)
+
+
+### Bug Fixes
+
+* jenkins optimization ([eeb2564](https://github.com/softwaregroup-bg/ut-webpack/commit/eeb2564a4b9608772d6ccbee3a7a92ed10c8d9b9))
+
+
+
 # [7.5.0](https://github.com/softwaregroup-bg/ut-webpack/compare/v7.4.0...v7.5.0) (2021-04-21)
 
 
