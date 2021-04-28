@@ -1,3 +1,12 @@
+# [7.6.0](https://github.com/softwaregroup-bg/ut-webpack/compare/v7.5.1...v7.6.0) (2021-04-28)
+
+
+### Features
+
+* primereact chunk ([ff696ee](https://github.com/softwaregroup-bg/ut-webpack/commit/ff696ee8357a351110782831e9bcc049984bedee))
+
+
+
 ## [7.5.1](https://github.com/softwaregroup-bg/ut-webpack/compare/v7.5.0...v7.5.1) (2021-04-21)
 
 
