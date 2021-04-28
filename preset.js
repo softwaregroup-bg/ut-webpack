@@ -114,6 +114,12 @@ module.exports = ({
                         enforce: true,
                         chunks: 'all'
                     },
+                    primereact: {
+                        test: /[\\/]node_modules[\\/](primereact|primeflex|primeicons)[\\/]/i,
+                        name: 'primereact',
+                        enforce: true,
+                        chunks: 'all'
+                    },
                     devextreme: {
                         test: /[\\/]node_modules[\\/](devextreme|devextreme-react)[\\/]/i,
                         name: 'devextreme',
