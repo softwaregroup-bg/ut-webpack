@@ -50,6 +50,19 @@ module.exports = ({
         .use('css')
         .loader('css-loader');
 
+    const primereact = neutrino.config.module
+        .rule('style')
+        .oneOf('primereact')
+        .test(/primereact[/\\]resources[/\\]themes[/\\].+\.css$/i)
+        .before('modules');
+    primereact
+        .use('style')
+        .loader('style-loader')
+        .options({injectType: 'lazyStyleTag'});
+    primereact
+        .use('css')
+        .loader('css-loader');
+
     neutrino.config.resolve.alias.set('react-dom', '@hot-loader/react-dom');
     neutrino.config.output.path(output);
     neutrino.config.module
