@@ -1,3 +1,12 @@
+## [7.6.1](https://github.com/softwaregroup-bg/ut-webpack/compare/v7.6.0...v7.6.1) (2021-05-17)
+
+
+### Bug Fixes
+
+* lazy load primereact themes [UTCORE-121] ([ce7f30a](https://github.com/softwaregroup-bg/ut-webpack/commit/ce7f30ae6c04459c07622e6fa7bd5ac6f3df7a21))
+
+
+
 # [7.6.0](https://github.com/softwaregroup-bg/ut-webpack/compare/v7.5.1...v7.6.0) (2021-04-28)
 
 
