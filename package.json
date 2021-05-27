@@ -1,6 +1,6 @@
 {
   "name": "ut-webpack",
-  "version": "7.6.1",
+  "version": "7.6.2",
   "main": "index.js",
   "dependencies": {
     "compression-webpack-plugin": "^4.0.0",

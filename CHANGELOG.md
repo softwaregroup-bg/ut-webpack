@@ -1,3 +1,12 @@
+## [7.6.2](https://github.com/softwaregroup-bg/ut-webpack/compare/v7.6.1...v7.6.2) (2021-05-27)
+
+
+### Bug Fixes
+
+* Cannot read property 'pop' of undefined ([6e8abca](https://github.com/softwaregroup-bg/ut-webpack/commit/6e8abca43603fad4ec81d059afe18042080b6060))
+
+
+
 ## [7.6.1](https://github.com/softwaregroup-bg/ut-webpack/compare/v7.6.0...v7.6.1) (2021-05-17)
 
 
