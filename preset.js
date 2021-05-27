@@ -154,6 +154,7 @@ module.exports = ({
                         ...prev,
                         [chunk]: {
                             test: RegExp(`[\\\\/]node_modules[\\\\/]${chunk}`),
+                            enforce: true,
                             name: chunk,
                             chunks: 'all'
                         }
