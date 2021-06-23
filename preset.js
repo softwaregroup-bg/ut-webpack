@@ -34,7 +34,13 @@ module.exports = ({
                 }]
             },
             publicPath,
-            devServer: {proxy}
+            devServer: {proxy},
+            babel: {
+                presets: [[
+                    '@babel/preset-env',
+                    {include: ['@babel/plugin-proposal-optional-chaining']}
+                ]]
+            }
         })
     );
     const devextreme = neutrino.config.module
