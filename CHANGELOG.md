@@ -1,3 +1,12 @@
+## [7.6.3](https://github.com/softwaregroup-bg/ut-webpack/compare/v7.6.2...v7.6.3) (2021-06-23)
+
+
+### Bug Fixes
+
+* https://github.com/neutrinojs/neutrino/issues/1641 ([dd9f0f9](https://github.com/softwaregroup-bg/ut-webpack/commit/dd9f0f9bbf92ff72f8e2e6b01c8f5db86c6f1eca))
+
+
+
 ## [7.6.2](https://github.com/softwaregroup-bg/ut-webpack/compare/v7.6.1...v7.6.2) (2021-05-27)
 
 
