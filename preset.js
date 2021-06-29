@@ -39,7 +39,10 @@ module.exports = ({
                 presets: [[
                     '@babel/preset-env',
                     {include: ['@babel/plugin-proposal-optional-chaining']}
-                ]]
+                ]],
+                plugins: [
+                    '@babel/plugin-proposal-class-properties'
+                ]
             }
         })
     );
