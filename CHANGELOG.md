@@ -1,3 +1,12 @@
+## [7.6.4](https://github.com/softwaregroup-bg/ut-webpack/compare/v7.6.3...v7.6.4) (2021-06-29)
+
+
+### Bug Fixes
+
+* Missing class properties transform [UTCORE-121] ([68b1a9e](https://github.com/softwaregroup-bg/ut-webpack/commit/68b1a9e2115cb8b07235bf01e76830c707f80cf3))
+
+
+
 ## [7.6.3](https://github.com/softwaregroup-bg/ut-webpack/compare/v7.6.2...v7.6.3) (2021-06-23)
 
 
