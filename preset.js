@@ -36,12 +36,8 @@ module.exports = ({
             publicPath,
             devServer: {proxy},
             babel: {
-                presets: [[
-                    '@babel/preset-env',
-                    {include: ['@babel/plugin-proposal-optional-chaining']}
-                ]],
                 plugins: [
-                    '@babel/plugin-proposal-class-properties'
+                    require.resolve('@babel/plugin-proposal-optional-chaining')
                 ]
             }
         })
