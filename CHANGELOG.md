@@ -1,3 +1,12 @@
+## [7.6.5](https://github.com/softwaregroup-bg/ut-webpack/compare/v7.6.4...v7.6.5) (2021-06-30)
+
+
+### Bug Fixes
+
+* do not overwrite preset-env [UTCORE-121] ([2e2aec1](https://github.com/softwaregroup-bg/ut-webpack/commit/2e2aec1522759eb6bf0d61151bc92521cd525f08))
+
+
+
 ## [7.6.4](https://github.com/softwaregroup-bg/ut-webpack/compare/v7.6.3...v7.6.4) (2021-06-29)
 
 
