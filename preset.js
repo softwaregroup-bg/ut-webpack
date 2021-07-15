@@ -36,6 +36,7 @@ module.exports = ({
             publicPath,
             devServer: {proxy},
             babel: {
+                sourceType: 'unambiguous',
                 plugins: [
                     require.resolve('@babel/plugin-proposal-optional-chaining')
                 ]
