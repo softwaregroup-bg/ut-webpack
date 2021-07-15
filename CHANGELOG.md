@@ -1,3 +1,12 @@
+## [7.6.6](https://github.com/softwaregroup-bg/ut-webpack/compare/v7.6.5...v7.6.6) (2021-07-15)
+
+
+### Bug Fixes
+
+* https://stackoverflow.com/a/52415747/1205028 [UTCORE-121] ([7ca6feb](https://github.com/softwaregroup-bg/ut-webpack/commit/7ca6febc4d0f0f870f67c85c5d31b1d47bd040d6))
+
+
+
 ## [7.6.5](https://github.com/softwaregroup-bg/ut-webpack/compare/v7.6.4...v7.6.5) (2021-06-30)
 
 
