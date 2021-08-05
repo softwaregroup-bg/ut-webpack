@@ -1,6 +1,6 @@
 {
   "name": "ut-webpack",
-  "version": "7.6.6",
+  "version": "7.7.0",
   "main": "index.js",
   "dependencies": {
     "@babel/plugin-proposal-optional-chaining": "^7.14.5",

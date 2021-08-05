@@ -1,3 +1,12 @@
+# [7.7.0](https://github.com/softwaregroup-bg/ut-webpack/compare/v7.6.6...v7.7.0) (2021-08-05)
+
+
+### Features
+
+* csp plugin [UTCORE-121] ([e5e6e3c](https://github.com/softwaregroup-bg/ut-webpack/commit/e5e6e3c42efe534ad1b95dbb02424773080d2fb9))
+
+
+
 ## [7.6.6](https://github.com/softwaregroup-bg/ut-webpack/compare/v7.6.5...v7.6.6) (2021-07-15)
 
 
