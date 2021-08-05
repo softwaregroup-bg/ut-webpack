@@ -12,11 +12,18 @@ module.exports = ({
         target: 'http://localhost:8004'
     },
     split,
-    cssImport = path.resolve('impl/browser/config')
+    cssImport = path.resolve('impl/browser/config'),
+    csp = {
+        enabled: false
+    },
+    html = {
+        cspPlugin: csp
+    }
 } = {}) => neutrino => {
     neutrino.options.source = source;
     neutrino.use(
         react({
+            html,
             style: {
                 modules: true,
                 modulesTest: /\.module\.css$|node_modules[/\\]ut-.+\.css|(?:^\/app\/|impl-[^/\\]+[/\\])(?!node_modules[/\\]).+\.css$/,
@@ -99,6 +106,7 @@ module.exports = ({
                 }
             }]);
         neutrino.config.plugin('compress').use(require.resolve('compression-webpack-plugin'));
+        neutrino.config.plugin('csp').use(require.resolve('csp-html-webpack-plugin')).after('html');
         neutrino.config.optimization.merge({
             splitChunks: {
                 maxInitialRequests: 30,
