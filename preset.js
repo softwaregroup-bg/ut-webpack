@@ -147,6 +147,12 @@ module.exports = ({
                         enforce: true,
                         chunks: 'all'
                     },
+                    chart: {
+                        test: /[\\/]node_modules[\\/]chart\.js[\\/]/i,
+                        name: 'chart',
+                        enforce: true,
+                        chunks: 'all'
+                    },
                     devextreme: {
                         test: /[\\/]node_modules[\\/](devextreme|devextreme-react)[\\/]/i,
                         name: 'devextreme',
@@ -160,22 +166,25 @@ module.exports = ({
                         chunks: 'all'
                     },
                     utPortal: {
-                        test: /[\\/]node_modules[\\/](ut-front-devextreme|ut-portal)/i,
+                        test: /[\\/]node_modules[\\/](ut-front-devextreme|ut-portal)[\\/]/i,
                         name: 'ut-portal',
+                        enforce: true,
                         chunks: 'all'
                     },
                     ...split.reduce((prev, chunk) => ({
                         ...prev,
                         [chunk]: {
-                            test: RegExp(`[\\\\/]node_modules[\\\\/]${chunk}`),
-                            enforce: true,
+                            test: RegExp(`[\\\\/]node_modules[\\\\/]${chunk}[\\\\/]`),
                             name: chunk,
+                            enforce: true,
                             chunks: 'all'
                         }
                     }), {}),
                     ut: {
                         test: /[\\/]node_modules[\\/]ut-/i,
                         name: 'ut',
+                        enforce: true,
+                        chunks: 'all',
                         priority: -5
                     }
                 }
