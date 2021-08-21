@@ -1,3 +1,12 @@
+## [7.7.1](https://github.com/softwaregroup-bg/ut-webpack/compare/v7.7.0...v7.7.1) (2021-08-21)
+
+
+### Bug Fixes
+
+* split chart.js #UTCORE-121 ([e177e29](https://github.com/softwaregroup-bg/ut-webpack/commit/e177e2993c80c46d9e3b62c2182c6d5b0be02d12)), closes [#UTCORE-121](https://github.com/softwaregroup-bg/ut-webpack/issues/UTCORE-121)
+
+
+
 # [7.7.0](https://github.com/softwaregroup-bg/ut-webpack/compare/v7.6.6...v7.7.0) (2021-08-05)
 
 
