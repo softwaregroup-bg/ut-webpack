@@ -1,3 +1,12 @@
+# [7.8.0](https://github.com/softwaregroup-bg/ut-webpack/compare/v7.7.1...v7.8.0) (2021-10-21)
+
+
+### Features
+
+* output .lint/bundle/stats.json ([21b039b](https://github.com/softwaregroup-bg/ut-webpack/commit/21b039bbc8ae372e8baf03bd30803fa5828ded9f))
+
+
+
 ## [7.7.1](https://github.com/softwaregroup-bg/ut-webpack/compare/v7.7.0...v7.7.1) (2021-08-21)
 
 
