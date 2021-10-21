@@ -198,5 +198,13 @@ module.exports = ({
                 defaultSizes: 'gzip',
                 logLevel: 'warn'
             }]);
+        neutrino.config.plugin('stats')
+            .use(require('webpack-bundle-analyzer').BundleAnalyzerPlugin, [{
+                statsFilename: path.resolve('.lint/bundle/stats.json'),
+                analyzerMode: 'json',
+                generateStatsFile: true,
+                defaultSizes: 'gzip',
+                logLevel: 'warn'
+            }]);
     }
 };
