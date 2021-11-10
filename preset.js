@@ -89,8 +89,9 @@ module.exports = ({
         .set('safe-json-stringify', require.resolve('./empty'))
         .set('source-map-support', require.resolve('./empty'));
     if (process.env.NODE_ENV === 'development') {
-        neutrino.config.resolve.modules
-            .add('node_modules')
+        neutrino.config.resolve
+            .symlinks(false)
+            .modules.add('node_modules')
             .prepend(devModulesPath);
     }
     if (process.env.NODE_ENV === 'production') {
