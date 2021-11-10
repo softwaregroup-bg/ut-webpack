@@ -1,3 +1,12 @@
+## [7.8.1](https://github.com/softwaregroup-bg/ut-webpack/compare/v7.8.0...v7.8.1) (2021-11-10)
+
+
+### Bug Fixes
+
+* preserve symlinks #UTCORE-121 ([afb2c13](https://github.com/softwaregroup-bg/ut-webpack/commit/afb2c13dc97d17a7638a553e8834e6053fadbeeb)), closes [#UTCORE-121](https://github.com/softwaregroup-bg/ut-webpack/issues/UTCORE-121)
+
+
+
 # [7.8.0](https://github.com/softwaregroup-bg/ut-webpack/compare/v7.7.1...v7.8.0) (2021-10-21)
 
 
