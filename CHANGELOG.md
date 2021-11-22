@@ -1,3 +1,12 @@
+# [7.9.0](https://github.com/softwaregroup-bg/ut-webpack/compare/v7.8.1...v7.9.0) (2021-11-22)
+
+
+### Features
+
+* turn off css modules in *.global.css ([83bc478](https://github.com/softwaregroup-bg/ut-webpack/commit/83bc478db79c01bab080b3ca0d2330a48512e7b8))
+
+
+
 ## [7.8.1](https://github.com/softwaregroup-bg/ut-webpack/compare/v7.8.0...v7.8.1) (2021-11-10)
 
 
