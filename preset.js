@@ -26,7 +26,7 @@ module.exports = ({
             html,
             style: {
                 modules: true,
-                modulesTest: /\.module\.css$|node_modules[/\\]ut-.+\.css|(?:^\/app\/|impl-[^/\\]+[/\\])(?!node_modules[/\\]).+\.css$/,
+                modulesTest: /\.module\.css$|node_modules[/\\]ut-.+\.css|(?:^\/app\/|impl-[^/\\]+[/\\])(?!node_modules[/\\]).+(?!\.global)\.css$/,
                 loaders: [{
                     loader: 'postcss-loader',
                     options: {
