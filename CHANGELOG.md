@@ -1,3 +1,12 @@
+## [7.9.1](https://github.com/softwaregroup-bg/ut-webpack/compare/v7.9.0...v7.9.1) (2021-12-16)
+
+
+### Bug Fixes
+
+* windows build error #UTCORE-121 ([20c9aff](https://github.com/softwaregroup-bg/ut-webpack/commit/20c9aff1e98b980feae1754a8dafd5d025e16799)), closes [#UTCORE-121](https://github.com/softwaregroup-bg/ut-webpack/issues/UTCORE-121)
+
+
+
 # [7.9.0](https://github.com/softwaregroup-bg/ut-webpack/compare/v7.8.1...v7.9.0) (2021-11-22)
 
 
