@@ -45,6 +45,7 @@ module.exports = ({
             babel: {
                 sourceType: 'unambiguous',
                 plugins: [
+                    require.resolve('@babel/plugin-proposal-class-properties'),
                     require.resolve('@babel/plugin-proposal-optional-chaining')
                 ]
             }
