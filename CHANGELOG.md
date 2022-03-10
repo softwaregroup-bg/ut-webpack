@@ -1,3 +1,7 @@
+## [7.9.2](https://github.com/softwaregroup-bg/ut-webpack/compare/v7.9.1...v7.9.2) (2022-03-10)
+
+
+
 ## [7.9.1](https://github.com/softwaregroup-bg/ut-webpack/compare/v7.9.0...v7.9.1) (2021-12-16)
 
 
