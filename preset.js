@@ -168,7 +168,7 @@ module.exports = ({
                         chunks: 'all'
                     },
                     utPortal: {
-                        test: /[\\/]node_modules[\\/](ut-front-devextreme|ut-portal)[\\/]/i,
+                        test: /[\\/]node_modules[\\/](ut-front-devextreme|ut-portal|ut-prime|ut-model)[\\/]/i,
                         name: 'ut-portal',
                         enforce: true,
                         chunks: 'all'
