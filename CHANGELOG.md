@@ -1,3 +1,12 @@
+## [7.9.3](https://github.com/softwaregroup-bg/ut-webpack/compare/v7.9.2...v7.9.3) (2022-05-03)
+
+
+### Bug Fixes
+
+* handle *.global.css properly ([e7d8ffe](https://github.com/softwaregroup-bg/ut-webpack/commit/e7d8ffe987c5e91cdf27fa0f95b8e11512a4b2ec))
+
+
+
 ## [7.9.2](https://github.com/softwaregroup-bg/ut-webpack/compare/v7.9.1...v7.9.2) (2022-03-10)
 
 
