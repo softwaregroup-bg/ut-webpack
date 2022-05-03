@@ -1,3 +1,12 @@
+## [7.9.4](https://github.com/softwaregroup-bg/ut-webpack/compare/v7.9.3...v7.9.4) (2022-05-03)
+
+
+### Bug Fixes
+
+* split ([f922d7d](https://github.com/softwaregroup-bg/ut-webpack/commit/f922d7da8857d864426c50a4d27c6c81360fd3a4))
+
+
+
 ## [7.9.3](https://github.com/softwaregroup-bg/ut-webpack/compare/v7.9.2...v7.9.3) (2022-05-03)
 
 
