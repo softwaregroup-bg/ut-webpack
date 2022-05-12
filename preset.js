@@ -57,7 +57,7 @@ module.exports = ({
         .rule('style')
         .oneOf('devextreme')
         .test(/devextreme[/\\]dist[/\\]css[/\\]dx\.(?!common).+\.css$/i)
-        .before(modules ? 'modules' : 'normal');
+        .before(cssModules ? 'modules' : 'normal');
     devextreme
         .use('style')
         .loader('style-loader')
@@ -70,7 +70,7 @@ module.exports = ({
         .rule('style')
         .oneOf('primereact')
         .test(/primereact[/\\]resources[/\\]themes[/\\].+\.css$/i)
-        .before(modules ? 'modules' : 'normal');
+        .before(cssModules ? 'modules' : 'normal');
     primereact
         .use('style')
         .loader('style-loader')
