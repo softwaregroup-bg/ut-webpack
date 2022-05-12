@@ -1,3 +1,12 @@
+## [7.9.5](https://github.com/softwaregroup-bg/ut-webpack/compare/v7.9.4...v7.9.5) (2022-05-12)
+
+
+### Bug Fixes
+
+* enable optional css modules #UTCORE-121 ([51411cb](https://github.com/softwaregroup-bg/ut-webpack/commit/51411cb27bbb52d7de39a1f34c4b0c9c013f4ec6)), closes [#UTCORE-121](https://github.com/softwaregroup-bg/ut-webpack/issues/UTCORE-121)
+
+
+
 ## [7.9.4](https://github.com/softwaregroup-bg/ut-webpack/compare/v7.9.3...v7.9.4) (2022-05-03)
 
 
