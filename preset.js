@@ -19,16 +19,17 @@ module.exports = ({
     html = {
         cspPlugin: csp
     },
-    modules = true
+    cssModules = /\.module\.css$|node_modules[/\\]ut-.+(?<!\.global)\.css|(?:^\/app\/|impl-[^/\\]+[/\\])(?!node_modules[/\\]).+(?<!\.global)\.css$/,
+    postcss = true
 } = {}) => neutrino => {
     neutrino.options.source = source;
     neutrino.use(
         react({
             html,
-            style: modules && {
+            style: cssModules && {
                 modules: true,
-                modulesTest: /\.module\.css$|node_modules[/\\]ut-.+(?<!\.global)\.css|(?:^\/app\/|impl-[^/\\]+[/\\])(?!node_modules[/\\]).+(?<!\.global)\.css$/,
-                loaders: [{
+                modulesTest: cssModules,
+                loaders: postcss ? [{
                     loader: 'postcss-loader',
                     options: {
                         plugins: [
@@ -39,7 +40,7 @@ module.exports = ({
                             require('postcss-clean')({level: 2, rebase: false})
                         ]
                     }
-                }]
+                }] : []
             },
             publicPath,
             devServer: {proxy},
