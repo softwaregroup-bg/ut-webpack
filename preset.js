@@ -18,13 +18,14 @@ module.exports = ({
     },
     html = {
         cspPlugin: csp
-    }
+    },
+    modules = true
 } = {}) => neutrino => {
     neutrino.options.source = source;
     neutrino.use(
         react({
             html,
-            style: {
+            style: modules && {
                 modules: true,
                 modulesTest: /\.module\.css$|node_modules[/\\]ut-.+(?<!\.global)\.css|(?:^\/app\/|impl-[^/\\]+[/\\])(?!node_modules[/\\]).+(?<!\.global)\.css$/,
                 loaders: [{
@@ -55,7 +56,7 @@ module.exports = ({
         .rule('style')
         .oneOf('devextreme')
         .test(/devextreme[/\\]dist[/\\]css[/\\]dx\.(?!common).+\.css$/i)
-        .before('modules');
+        .before(modules ? 'modules' : 'normal');
     devextreme
         .use('style')
         .loader('style-loader')
@@ -68,7 +69,7 @@ module.exports = ({
         .rule('style')
         .oneOf('primereact')
         .test(/primereact[/\\]resources[/\\]themes[/\\].+\.css$/i)
-        .before('modules');
+        .before(modules ? 'modules' : 'normal');
     primereact
         .use('style')
         .loader('style-loader')
