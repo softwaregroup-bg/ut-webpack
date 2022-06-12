@@ -1,3 +1,12 @@
+## [8.0.2](https://github.com/softwaregroup-bg/ut-webpack/compare/v8.0.1...v8.0.2) (2022-06-12)
+
+
+### Bug Fixes
+
+* global usage ([0ea61e1](https://github.com/softwaregroup-bg/ut-webpack/commit/0ea61e12a01261d14c2a969578e4bd449645eb26))
+
+
+
 ## [8.0.1](https://github.com/softwaregroup-bg/ut-webpack/compare/v7.9.6...v8.0.1) (2022-06-12)
 
 
