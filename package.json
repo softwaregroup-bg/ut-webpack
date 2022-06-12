@@ -1,6 +1,6 @@
 {
   "name": "ut-webpack",
-  "version": "7.9.6",
+  "version": "8.0.0",
   "main": "index.js",
   "dependencies": {
     "@babel/plugin-proposal-class-properties": "^7.16.7",
@@ -16,6 +16,9 @@
     "postcss-merge-rules": "^4.0.3",
     "postcss-preset-env": "^6.7.0",
     "terser-webpack-plugin": "^3.1.0",
+    "webpack": "^4.46.0",
+    "webpack-cli": "^3.3.12",
+    "webpack-dev-server": "^3.11.3",
     "webpack-bundle-analyzer": "^4.4.2"
   },
   "devDependencies": {
@@ -23,6 +26,11 @@
     "ut-tools": "^6.40.4"
   },
   "peerDependencies": {},
+  "bin": {
+    "ut-webpack": "bin/ut-webpack.js",
+    "ut-webpack-dev-server": "bin/ut-webpack-dev-server.js"
+  },
+  "bundledDependencies": true,
   "description": "Webpack shared config",
   "scripts": {
     "lint": "ut-lint .",

@@ -30,7 +30,7 @@ module.exports = ({
                 modules: true,
                 modulesTest: cssModules,
                 loaders: postcss ? [{
-                    loader: 'postcss-loader',
+                    loader: require.resolve('postcss-loader'),
                     options: {
                         plugins: [
                             require('postcss-import')({path: [cssImport]}),
@@ -60,11 +60,11 @@ module.exports = ({
         .before(cssModules ? 'modules' : 'normal');
     devextreme
         .use('style')
-        .loader('style-loader')
+        .loader(require.resolve('style-loader'))
         .options({injectType: 'lazyStyleTag'});
     devextreme
         .use('css')
-        .loader('css-loader');
+        .loader(require.resolve('css-loader'));
 
     const primereact = neutrino.config.module
         .rule('style')
@@ -73,11 +73,11 @@ module.exports = ({
         .before(cssModules ? 'modules' : 'normal');
     primereact
         .use('style')
-        .loader('style-loader')
+        .loader(require.resolve('style-loader'))
         .options({injectType: 'lazyStyleTag'});
     primereact
         .use('css')
-        .loader('css-loader');
+        .loader(require.resolve('css-loader'));
 
     neutrino.config.resolve.alias.set('react-dom', '@hot-loader/react-dom');
     neutrino.config.output.path(output);
