@@ -1,6 +1,6 @@
-// Whilst the configuration object can be modified here, the recommended way of making
-// changes is via the presets' options or Neutrino's API in `.neutrinorc.js` instead.
-// Neutrino's inspect feature can be used to view/export the generated configuration.
+const { join } = require('path');
 const neutrino = require('neutrino');
+const utWebpack = require('./preset');
+const middleware = require(join(process.cwd(), 'utWebpack'));
 
-module.exports = neutrino().webpack();
+module.exports = neutrino(middleware({utWebpack})).webpack();
