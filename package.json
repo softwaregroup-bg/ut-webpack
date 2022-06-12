@@ -23,7 +23,7 @@
   },
   "devDependencies": {
     "tap": "^15.0.9",
-    "ut-tools": "^6.40.4"
+    "ut-tools": "^6.41.2"
   },
   "peerDependencies": {},
   "bin": {
