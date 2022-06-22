@@ -1,54 +1,42 @@
 # ut-webpack
 
-[Neutrino](https://neutrinojs.org/) based preset for usage with ut framework.
+[Neutrino](https://neutrinojs.org/) based preset for usage with UT framework.
 
 ## Usage
 
-Put the following files in the implementation root folder:
+1) Install `ut-webpack` globally.
+2) Create a `utWebpack.js` file in your project root, with the following content:
 
-- `.neutrinorc.js`
+    ```js
+    module.exports = ({utWebpack}) => ({
+        options: {
+            mains: {
+                admin: 'admin',
+                service: 'service',
+                solution: 'solution',
+                adminPortal: 'adminPortal',
+                cmsPortal: 'cmsPortal'
+            }
+        },
+        use: [utWebpack({...options})]
+    });
+    ```
 
-  ```js
-  const preset = require('ut-webpack/preset');
-  module.exports = {
-      options: {
-          mains: {
-              admin: 'admin',
-              service: 'service',
-              solution: 'solution'
-          }
-      },
-      use: [preset()]
-  };
-  ```
+3) Edit `package.json` to include:
 
-- `webpack.config.js`
-
-  ```js
-  module.exports = require('ut-webpack');
-  ```
-
-Edit `package.json` to include:
-
-```json
-{
-    "devDependencies": {
-        "@hot-loader/react-dom": "16.13.0",
-        "ut-webpack": "^7.2.0",
-        "webpack": "^4.43.0",
-        "webpack-cli": "^3.3.12",
-        "webpack-dev-server": "^3.11.0",
-    },
-    "scripts": {
-        "start": "webpack-dev-server --mode development --open",
-        "build": "webpack --mode production",
-        "release": "webpack --mode production && ut-release"
+    ```json
+    {
+        "scripts": {
+            "start": "ut-webpack-dev-server --mode development --open",
+            "build": "ut-webpack --mode production",
+            "release": "ut-webpack --mode production && ut-release"
+        }
     }
-}
-```
+    ```
 
-- Use `npm run start` to start the development server with hot reload enabled
-- Use `npm run build` to build the production front end
+Use `npm run start` to start the development server with hot reload enabled.
+
+Use `npm run build` to build the production front end.
 
 ## Configuration
 
@@ -81,3 +69,7 @@ in the first argument :
 - `devModulesPath` - sets Neutrino
   [path](https://neutrinojs.org/webpack-chain/#config-resolve-modules),
   the default is: `dev`
+- `csp` - Allows content security options to be passed to
+  [csp-html-webpack-plugin](https://www.npmjs.com/package/csp-html-webpack-plugin)
+- `html` - Allows html options to be passed to
+  [html-webpack-plugin](https://www.npmjs.com/package/html-webpack-plugin)
