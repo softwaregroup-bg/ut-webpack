@@ -84,7 +84,23 @@ module.exports = ({
     neutrino.config.module
         .rule('compile')
         .include.clear().end()
+        // .exclude.add(/node_modules[\\/]((ut-prime)|(?!(impl|ut)-))/).end();
         .exclude.add(/node_modules[\\/](?!(impl|ut)-)/).end();
+    neutrino.config.module
+        .rule('tesseract')
+        .before('compile')
+        .test(/tesseract\.js\/dist\/|tesseract\.js-core\//)
+        .use('file')
+        .loader(require.resolve('file-loader'))
+        .options({outputPath: 'tesseract'});
+    neutrino.config.module
+        .rule('tesseract-train')
+        .before('compile')
+        .test(/\.traineddata\.gz/)
+        .use('file')
+        .loader(require.resolve('file-loader'))
+        .options({outputPath: 'tesseract', name: '[contenthash].traineddata.gz'});
+
     neutrino.config.node.set('Buffer', true);
     neutrino.config.resolve.alias
         .set('bufferutil', require.resolve('./empty'))
