@@ -1,3 +1,12 @@
+# [8.1.0](https://github.com/softwaregroup-bg/ut-webpack/compare/v8.0.3...v8.1.0) (2022-10-06)
+
+
+### Features
+
+* support tesseract.js ([cb3ed91](https://github.com/softwaregroup-bg/ut-webpack/commit/cb3ed91be6cd83b6af3c212bc10936b1eb2910f3))
+
+
+
 ## [8.0.3](https://github.com/softwaregroup-bg/ut-webpack/compare/v8.0.2...v8.0.3) (2022-06-22)
 
 
