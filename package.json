@@ -5,6 +5,7 @@
   "dependencies": {
     "@babel/plugin-proposal-class-properties": "^7.16.7",
     "@babel/plugin-proposal-optional-chaining": "^7.16.7",
+    "@neutrinojs/copy": "^9.5.0",
     "@neutrinojs/react": "^9.5.0",
     "compression-webpack-plugin": "^4.0.1",
     "csp-html-webpack-plugin": "^5.1.0",
