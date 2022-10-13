@@ -19,7 +19,7 @@ module.exports = ({
     html = {
         cspPlugin: csp
     },
-    cssModules = /\.module\.css$|node_modules[/\\]ut-.+(?<!\.global)\.css|(?:^\/app\/|impl-[^/\\]+[/\\])(?!node_modules[/\\]).+(?<!\.global)\.css$/,
+    cssModules = /\.module\.(sass|scss)|\.module\.css$|node_modules[/\\]ut-.+(?<!\.global)\.css|(?:^\/app\/|impl-[^/\\]+[/\\])(?!node_modules[/\\]).+(?<!\.global)\.css$/,
     postcss = true,
     sass = false
 } = {}) => neutrino => {
