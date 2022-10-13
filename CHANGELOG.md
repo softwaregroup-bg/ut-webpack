@@ -1,3 +1,15 @@
+# [8.2.0](https://github.com/softwaregroup-bg/ut-webpack/compare/v8.1.0...v8.2.0) (2022-10-13)
+
+
+### Features
+
+* scss, copy ([c055211](https://github.com/softwaregroup-bg/ut-webpack/commit/c05521189f008067d3d8fd409251f6d901a61734))
+* scss, copy ([7a55b98](https://github.com/softwaregroup-bg/ut-webpack/commit/7a55b98c8eccf636983855f051228963853bc1e5))
+* scss, copy ([d239153](https://github.com/softwaregroup-bg/ut-webpack/commit/d239153a703e0a298cc5ec0fb51d9bc308d37750))
+* scss, copy ([ff2e868](https://github.com/softwaregroup-bg/ut-webpack/commit/ff2e868ab7657e3d71b7dda56bf71f364b75396e))
+
+
+
 # [8.1.0](https://github.com/softwaregroup-bg/ut-webpack/compare/v8.0.3...v8.1.0) (2022-10-06)
 
 
