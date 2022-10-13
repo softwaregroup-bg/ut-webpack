@@ -20,7 +20,8 @@ module.exports = ({
         cspPlugin: csp
     },
     cssModules = /\.module\.css$|node_modules[/\\]ut-.+(?<!\.global)\.css|(?:^\/app\/|impl-[^/\\]+[/\\])(?!node_modules[/\\]).+(?<!\.global)\.css$/,
-    postcss = true
+    postcss = true,
+    sass = false
 } = {}) => neutrino => {
     neutrino.options.source = source;
     neutrino.use(
@@ -29,7 +30,8 @@ module.exports = ({
             style: cssModules && {
                 modules: true,
                 modulesTest: cssModules,
-                loaders: postcss ? [{
+                ...sass && {test: /\.(css|sass|scss)$/},
+                loaders: [postcss && {
                     loader: require.resolve('postcss-loader'),
                     options: {
                         plugins: [
@@ -40,7 +42,10 @@ module.exports = ({
                             require('postcss-clean')({level: 2, rebase: false})
                         ]
                     }
-                }] : []
+                }, sass && {
+                    loader: require.resolve('sass-loader'),
+                    useId: 'sass'
+                }].filter(Boolean)
             },
             publicPath,
             devServer: {proxy},
