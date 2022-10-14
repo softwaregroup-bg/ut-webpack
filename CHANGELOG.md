@@ -1,3 +1,12 @@
+## [8.2.1](https://github.com/softwaregroup-bg/ut-webpack/compare/v8.2.0...v8.2.1) (2022-10-14)
+
+
+### Bug Fixes
+
+* add node-sass dependency ([c981980](https://github.com/softwaregroup-bg/ut-webpack/commit/c981980a8905473134dc740c48ac66aff99e677d))
+
+
+
 # [8.2.0](https://github.com/softwaregroup-bg/ut-webpack/compare/v8.1.0...v8.2.0) (2022-10-13)
 
 
