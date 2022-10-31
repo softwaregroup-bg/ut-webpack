@@ -6,7 +6,8 @@ module.exports = ({
     publicPath = '/a/browser/',
     source = 'browser',
     output = path.resolve('dist'),
-    devModulesPath = 'dev',
+    devModulesPath = path.resolve('dev'),
+    include = [],
     proxy = {
         context: ['!/a/browser/**'],
         target: 'http://localhost:8004'
@@ -53,6 +54,7 @@ module.exports = ({
                 sourceType: 'unambiguous',
                 plugins: [
                     require.resolve('@babel/plugin-proposal-class-properties'),
+                    require.resolve('@babel/plugin-proposal-nullish-coalescing-operator'),
                     require.resolve('@babel/plugin-proposal-optional-chaining')
                 ]
             }
@@ -90,7 +92,7 @@ module.exports = ({
         .rule('compile')
         .include.clear().end()
         // .exclude.add(/node_modules[\\/]((ut-prime)|(?!(impl|ut)-))/).end();
-        .exclude.add(/node_modules[\\/](?!(impl|ut)-)/).end();
+        .exclude.add(new RegExp(`node_modules/(?!(${['impl-', 'ut-', ...include].join('|')}))`.replace(/[\\/]/g, '[\\\\/]'), 'i'));
     neutrino.config.module
         .rule('tesseract')
         .before('compile')
@@ -116,7 +118,7 @@ module.exports = ({
         neutrino.config.resolve
             .symlinks(false)
             .modules.add('node_modules')
-            .prepend(devModulesPath);
+            .add(devModulesPath);
     }
     if (process.env.NODE_ENV === 'production') {
         neutrino.config.optimization

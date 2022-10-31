@@ -4,6 +4,7 @@
   "main": "index.js",
   "dependencies": {
     "@babel/plugin-proposal-class-properties": "^7.16.7",
+    "@babel/plugin-proposal-nullish-coalescing-operator": "^7.18.6",
     "@babel/plugin-proposal-optional-chaining": "^7.16.7",
     "@neutrinojs/copy": "^9.5.0",
     "@neutrinojs/react": "^9.5.0",
