@@ -7,7 +7,6 @@ module.exports = ({
     source = 'browser',
     output = path.resolve('dist'),
     devModulesPath = path.resolve('dev'),
-    include = [],
     proxy = {
         context: ['!/a/browser/**'],
         target: 'http://localhost:8004'
@@ -92,7 +91,7 @@ module.exports = ({
         .rule('compile')
         .include.clear().end()
         // .exclude.add(/node_modules[\\/]((ut-prime)|(?!(impl|ut)-))/).end();
-        .exclude.add(new RegExp(`node_modules/(?!(${['impl-', 'ut-', ...include].join('|')}))`.replace(/[\\/]/g, '[\\\\/]'), 'i'));
+        .exclude.add(/node_modules[\\/](?!(impl|ut)-)/).end();
     neutrino.config.module
         .rule('tesseract')
         .before('compile')
