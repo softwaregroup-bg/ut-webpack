@@ -1,6 +1,6 @@
 {
   "name": "ut-webpack",
-  "version": "8.2.1",
+  "version": "8.2.2",
   "main": "index.js",
   "dependencies": {
     "@babel/plugin-proposal-class-properties": "^7.16.7",

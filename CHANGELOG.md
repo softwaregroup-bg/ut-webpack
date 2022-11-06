@@ -1,3 +1,12 @@
+## [8.2.2](https://github.com/softwaregroup-bg/ut-webpack/compare/v8.2.1...v8.2.2) (2022-11-06)
+
+
+### Bug Fixes
+
+* plugin-proposal-nullish-coalescing-operator babel plugin + inclu… ([#4](https://github.com/softwaregroup-bg/ut-webpack/issues/4)) ([7f71920](https://github.com/softwaregroup-bg/ut-webpack/commit/7f71920efa635bb109dd70844211d97c5ea495c9)), closes [#UTCORE-121](https://github.com/softwaregroup-bg/ut-webpack/issues/UTCORE-121)
+
+
+
 ## [8.2.1](https://github.com/softwaregroup-bg/ut-webpack/compare/v8.2.0...v8.2.1) (2022-10-14)
 
 
