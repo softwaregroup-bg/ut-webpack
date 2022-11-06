@@ -6,7 +6,7 @@ module.exports = ({
     publicPath = '/a/browser/',
     source = 'browser',
     output = path.resolve('dist'),
-    devModulesPath = 'dev',
+    devModulesPath = path.resolve('dev'),
     proxy = {
         context: ['!/a/browser/**'],
         target: 'http://localhost:8004'
@@ -53,6 +53,7 @@ module.exports = ({
                 sourceType: 'unambiguous',
                 plugins: [
                     require.resolve('@babel/plugin-proposal-class-properties'),
+                    require.resolve('@babel/plugin-proposal-nullish-coalescing-operator'),
                     require.resolve('@babel/plugin-proposal-optional-chaining')
                 ]
             }
@@ -116,7 +117,7 @@ module.exports = ({
         neutrino.config.resolve
             .symlinks(false)
             .modules.add('node_modules')
-            .prepend(devModulesPath);
+            .add(devModulesPath);
     }
     if (process.env.NODE_ENV === 'production') {
         neutrino.config.optimization
