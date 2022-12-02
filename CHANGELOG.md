@@ -1,3 +1,12 @@
+## [8.2.3](https://github.com/softwaregroup-bg/ut-webpack/compare/v8.2.2...v8.2.3) (2022-12-02)
+
+
+### Bug Fixes
+
+* Windows paths ([d3042da](https://github.com/softwaregroup-bg/ut-webpack/commit/d3042da171527af8f7102e34c9ac47e0fd8192e2))
+
+
+
 ## [8.2.2](https://github.com/softwaregroup-bg/ut-webpack/compare/v8.2.1...v8.2.2) (2022-11-06)
 
 
