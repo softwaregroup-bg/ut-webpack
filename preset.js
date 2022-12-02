@@ -95,7 +95,7 @@ module.exports = ({
     neutrino.config.module
         .rule('tesseract')
         .before('compile')
-        .test(/tesseract\.js\/dist\/|tesseract\.js-core\//)
+        .test(/tesseract\.js[\\/]dist[\\/]|tesseract\.js-core[\\/]/)
         .use('file')
         .loader(require.resolve('file-loader'))
         .options({outputPath: 'tesseract'});
