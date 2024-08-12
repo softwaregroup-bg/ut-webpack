@@ -1,3 +1,12 @@
+## [8.2.4](https://github.com/softwaregroup-bg/ut-webpack/compare/v8.2.3...v8.2.4) (2024-08-12)
+
+
+### Bug Fixes
+
+* enforce last working cheerio version for node16 ([ca8aca1](https://github.com/softwaregroup-bg/ut-webpack/commit/ca8aca1731b41f89f0db195525f87ff82fb7d6e7))
+
+
+
 ## [8.2.3](https://github.com/softwaregroup-bg/ut-webpack/compare/v8.2.2...v8.2.3) (2022-12-02)
 
 
