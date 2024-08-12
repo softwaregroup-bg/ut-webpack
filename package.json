@@ -30,6 +30,11 @@
     "ut-tools": "^6.41.2"
   },
   "peerDependencies": {},
+  "overrides": {
+    "csp-html-webpack-plugin": {
+      "cheerio": "1.0.0-rc.11"
+    }
+  },
   "bin": {
     "ut-webpack": "bin/ut-webpack.js",
     "ut-webpack-dev-server": "bin/ut-webpack-dev-server.js"
