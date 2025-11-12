@@ -36,7 +36,7 @@
 
 Use `npm run start` to start the development server with hot reload enabled.
 
-Use `npm run build` to build the production front end.
+Use `npm run build` to build the production front end. Rebuild.
 
 ## Configuration
 
