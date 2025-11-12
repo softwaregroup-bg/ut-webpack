@@ -1,3 +1,7 @@
+## [9.1.1](https://github.com/softwaregroup-bg/ut-webpack/compare/v9.1.0...v9.1.1) (2025-11-12)
+
+
+
 # [9.1.0](https://github.com/softwaregroup-bg/ut-webpack/compare/v9.0.1...v9.1.0) (2025-11-12)
 
 
