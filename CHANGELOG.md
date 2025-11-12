@@ -1,3 +1,11 @@
+# [9.0.0](https://github.com/softwaregroup-bg/ut-webpack/compare/v9.0.0-node-upgrade.0...v9.0.0) (2025-11-12)
+
+
+
+## [8.2.5](https://github.com/softwaregroup-bg/ut-webpack/compare/v8.2.4...v8.2.5) (2025-11-12)
+
+
+
 ## [8.2.5](https://github.com/softwaregroup-bg/ut-webpack/compare/v8.2.4...v8.2.5) (2025-11-12)
 
 
