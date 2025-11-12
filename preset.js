@@ -123,15 +123,14 @@ module.exports = ({
         neutrino.config.optimization
             .minimizer('terser')
             .use(require.resolve('terser-webpack-plugin'), [{
-                cache: true,
                 parallel: true,
-                sourceMap: neutrino.config.devtool && /source-?map/.test(neutrino.config.devtool),
                 terserOptions: {
                     keep_classnames: true,
                     keep_fnames: true
                 }
             }]);
-        neutrino.config.plugin('compress').use(require.resolve('compression-webpack-plugin'));
+        const CompressionPlugin = require('compression-webpack-plugin');
+        neutrino.config.plugin('compress').use(CompressionPlugin);
         neutrino.config.plugin('csp').use(require.resolve('csp-html-webpack-plugin')).after('html');
         neutrino.config.optimization.merge({
             splitChunks: {
