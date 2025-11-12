@@ -1,6 +1,6 @@
 # ut-webpack
 
-[Neutrino](https://neutrinojs.org/) based preset for usage with UT framework.
+[Neutrino](https://neutrinojs.org/) based preset for usage with UT framework. R.
 
 ## Usage
 
