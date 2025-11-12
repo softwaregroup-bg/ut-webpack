@@ -1,3 +1,12 @@
+# [9.1.0](https://github.com/softwaregroup-bg/ut-webpack/compare/v9.0.1...v9.1.0) (2025-11-12)
+
+
+### Features
+
+* upgrade webpack DII-1 ([fbd112d](https://github.com/softwaregroup-bg/ut-webpack/commit/fbd112d53441119d5ed3122ba204cf3da4a8f8bf))
+
+
+
 ## [9.0.1](https://github.com/softwaregroup-bg/ut-webpack/compare/v9.0.0...v9.0.1) (2025-11-12)
 
 
