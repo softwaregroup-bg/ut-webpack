@@ -1,3 +1,7 @@
+## [8.2.5](https://github.com/softwaregroup-bg/ut-webpack/compare/v8.2.4...v8.2.5) (2025-11-12)
+
+
+
 ## [8.2.4](https://github.com/softwaregroup-bg/ut-webpack/compare/v8.2.3...v8.2.4) (2024-08-12)
 
 
